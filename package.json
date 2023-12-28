@@ -1,0 +1,14 @@
+{
+  "name": "json-mapify",
+  "version": "1.0.0",
+  "description": "A simple tool for mapping data to a specific object schema",
+  "main": "index.js",
+  "keywords": [
+    "json",
+    "map",
+    "mapper",
+    "schema"
+  ],
+  "author": "github.com/mfried40/",
+  "license": "ISC"
+}
