@@ -1,6 +1,6 @@
 {
   "name": "json-mapify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple tool for mapping data to a specific object schema",
   "main": "index.js",
   "repository": "github:mfried40/json-mapify",
