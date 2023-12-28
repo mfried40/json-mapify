@@ -15,5 +15,8 @@
     "url": "https://github.com/mfried40"
   },
   "license": "ISC",
-  "homepage": "https://github.com/mfried40/json-mapify"
+  "homepage": "https://github.com/mfried40/json-mapify",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
