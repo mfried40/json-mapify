@@ -2,6 +2,12 @@
 
 JSON Mapify is a lightweight npm package that simplifies the process of mapping JavaScript objects to specific schemas. Whether you need to transform data into a view model or revert it back to its original structure, this package provides two essential functions: `toViewModel()` and `toDataModel()`.
 
+[![Socket Badge](https://socket.dev/api/badge/npm/package/json-mapify?style=flat-square)](https://socket.dev/npm/package/json-mapify)
+[![npm](https://img.shields.io/npm/v/json-mapify?style=flat-square&logo=npm)](https://www.npmjs.com/package/json-mapify)
+[![GitHub issues](https://img.shields.io/github/issues/mfried40/json-mapify?style=flat-square&logo=github)](https://github.com/mfried40/json-mapify/issues)
+![NPM](https://img.shields.io/npm/l/json-mapify?style=flat-square&logo=opensourceinitiative)
+![npm bundle size](https://img.shields.io/bundlephobia/min/json-mapify?style=flat-square&logo=npm)
+
 ## Installation
 
 Install the package using npm:
