@@ -2,8 +2,13 @@
   "name": "json-mapify",
   "version": "1.0.4",
   "description": "A simple tool for mapping data to a specific object schema",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "github:mfried40/json-mapify",
+  "scripts": {
+    "prepublish": "jest && tsc",
+    "test": "jest"
+  },
   "keywords": [
     "json",
     "map",
@@ -17,6 +22,15 @@
   "license": "ISC",
   "homepage": "https://github.com/mfried40/json-mapify",
   "dependencies": {
+    "@types/lodash": "^4.17.13",
+    "joi": "^17.13.3",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   }
 }
