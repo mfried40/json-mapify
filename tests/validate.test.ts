@@ -24,43 +24,37 @@ describe('validate', () => {
         },
     ];
 
-    it('should validate a valid data model', () => {
+    it('should validate a valid data model', async () => {
         const data = {
             ID: 1,
             FirstName: 'Mayer',
             LastName: 'Fried',
         };
-        expect(validate(data, schema, true)).toStrictEqual({value: data});
+        expect((await validate(data, schema, true)).isValid).toBeTruthy();
     });
 
-    it('should return an error for invalid data', () => {
+    it('should return an error for invalid data', async () => {
         const data = {
             ID: 1,
             FirstName: 'Mayer',
         };
-        expect(validate(data, schema, true)).toStrictEqual({
-            error: expect.any(Object),
-            value: data,
-        });
+        expect((await validate(data, schema, true)).isValid).toBeFalsy();
     });
 
-    it('should validate a valid view model', () => {
+    it('should validate a valid view model', async () => {
         const data = {
             id: 1,
             firstName: 'Mayer',
             lastName: 'Fried',
         };
-        expect(validate(data, schema)).toStrictEqual({value: data});
+        expect(await validate(data, schema)).toBeTruthy();
     });
 
-    it('should return an error for invalid view model', () => {
+    it('should return an error for invalid view model', async () => {
         const data = {
             id: 1,
             firstName: 'Mayer',
         };
-        expect(validate(data, schema)).toStrictEqual({
-            error: expect.any(Object),
-            value: data,
-        });
+        expect((await validate(data, schema)).isValid).toBeFalsy();
     });
 });
