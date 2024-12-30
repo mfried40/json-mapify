@@ -1,6 +1,6 @@
 interface MinimalColumnSchema {
     name: string,
-    validator?: any,
+    validator?: any | [ any ],
 }
 
 // Data only with custom data content
