@@ -26,7 +26,7 @@ function convertObject(data: object ,schema: Schema): Object {
     for (let column of schema) {
         if(isColumnSchemaWithViewPath(column)) {
             if(isColumnWithViewContent(column)) {
-                if(column.viewContent(data, viewModel)) {
+                if(column.viewContent(data, viewModel) != undefined) {
                     viewModel[column.viewPath] = column.viewContent(data, viewModel);
                 }
             }

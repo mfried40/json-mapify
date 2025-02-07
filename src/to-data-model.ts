@@ -19,7 +19,7 @@ function convertObject(data: object ,schema: Schema): Object {
     for (let column of schema) {
         if(isColumnSchemaWithDataPath(column)) {
             if(isColumnWithDataContent(column)) {
-                if(column.dataContent(data)) {
+                if(column.dataContent(data) != undefined) {
                     dataModel[column.dataPath] = column.dataContent(data);
                 }
             }
