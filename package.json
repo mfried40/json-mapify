@@ -1,6 +1,6 @@
 {
   "name": "json-mapify",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple tool for mapping data to a specific object schema",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
